@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<title>Lugares de interés de Algeciras</title>
+<style>
+  body{font-family:system-ui;margin:1rem;display:grid;gap:1rem;
+       grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{border:2px solid;padding:1rem;border-radius:6px}
+  [data-category="historia"]{border-color:#4078f2}
+  [data-category="playa"]     {border-color:#d97706}
+  [data-category="cultura"]   {border-color:#059669}
+  .precio{font-weight:700}
+</style>
+</head>
+<body>
+  <article class="card" data-category="playa">
+    <h2>Playa de Getares</h2>
+    <p class="precio">1.500 metros de longitud</p>
+    <p>Playa de arena dorada con duchas, aseos y acceso para personas con discapacidad mediante rampas hasta la mitad de la playa.</p>
+  </article>
+
+  <article class="card" data-category="cultura">
+    <h2>Museo Municipal</h2>
+    <p class="precio">7 salas</p>
+    <p>Su exposición recorre la historia de Algeciras desde la prehistoria hasta la época contemporánea.</p>
+  </article>
+
+  <article class="card" data-category="historia">
+    <h2>Murallas Medievales</h2>
+    <p class="precio">6.000 m²</p>
+    <p>Complejo arqueológico con muralla defensiva, torres, antemuro y foso, construido originalmente entre 1279 y 1285.</p>
+  </article>
+</body>
+</html>

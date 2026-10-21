@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reserva de actividad en Getares</title>
+  <style>
+    body{font-family:system-ui;margin:1rem;max-width:600px}
+    fieldset{border:1px solid #ccc;padding:1rem}
+    label{display:block;margin-top:.7rem}
+    input[type=range]{width:100%}
+  </style>
+</head>
+<body>
+  <h1>Planifica tu visita a Getares</h1>
+  <p>La playa de Getares tiene 1.500 metros de longitud y dispone de duchas y aseos.</p>
+
+  <form action="#" aria-describedby="ayuda-nivel">
+    <fieldset>
+      <legend>Datos de la visita</legend>
+
+      <label>Nombre
+        <input type="text" name="nombre" required />
+      </label>
+
+      <label>E-mail
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Fecha
+        <input type="date" name="fecha" required />
+      </label>
+
+      <p>Turno preferido</p>
+      <label><input type="radio" name="turno" value="mañana" required /> Mañana</label>
+      <label><input type="radio" name="turno" value="tarde" required /> Tarde</label>
+
+      <label>Interés por las actividades (1 bajo – 10 alto)
+        <input type="range" name="nivel" min="1" max="10" value="5" aria-describedby="ayuda-nivel" />
+      </label>
+      <small id="ayuda-nivel">Selecciona tu nivel de interés aproximado.</small>
+
+      <label>
+        <input type="checkbox" name="informacion" /> Quiero consultar los servicios de la playa
+      </label>
+    </fieldset>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</body>
+</html>
